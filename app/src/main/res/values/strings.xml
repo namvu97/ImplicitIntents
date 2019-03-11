@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Implicit Intents</string>
+    <string name="edittext_uri">developer.android.com</string>
+    <string name="button_uri">Open Website</string>
+
+    <string name="edittext_loc">PTIT</string>
+    <string name="button_loc">Open Location</string>
+
+    <string name="edittext_share">Hello World</string>
+    <string name="button_share">Share This Text</string>
+    <string name="edittext_send_email">Send Email</string>
+    <string name="button_send_email">Send This Text</string>
+    <string name="edittext_call_phone">0332767399</string>
+    <string name="button_call_phone">Call This Phone</string>
+</resources>

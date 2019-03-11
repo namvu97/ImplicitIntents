@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#99CC00">
+
+    <EditText
+        android:id="@+id/website_edittext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/edittext_uri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/open_website_button"
+        android:layout_width="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/website_edittext"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/button_uri"
+        android:onClick="openWebsite"
+        android:background="#FFCC00"/>
+
+    <EditText
+        android:id="@+id/location_edittext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="90dp"
+        android:text="@string/edittext_loc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/open_location_button"
+        app:layout_constraintStart_toEndOf="@+id/location_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/open_website_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_loc"
+        android:onClick="openLocation"
+        android:background="#FFCC00"/>
+
+    <EditText
+        android:id="@+id/callphone_edittext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:text="@string/edittext_call_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/call_phone_button"
+        app:layout_constraintStart_toEndOf="@+id/callphone_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/open_location_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_call_phone"
+        android:onClick="callphone"
+        android:background="#FFCC00"/>
+
+    <EditText
+        android:id="@+id/share_edittext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/edittext_share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/share_text_button"
+        app:layout_constraintStart_toEndOf="@+id/share_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/call_phone_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_share"
+        android:onClick="shareText"
+        android:background="#FFCC00"/>
+
+    <EditText
+        android:id="@+id/sendEmail_edittext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:text="@string/edittext_send_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/sendEmail_button"
+        app:layout_constraintStart_toEndOf="@+id/sendEmail_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/share_text_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_send_email"
+        android:onClick="sendEmail"
+        android:background="#FFCC00"/>
+
+</android.support.constraint.ConstraintLayout>
